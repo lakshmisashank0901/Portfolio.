@@ -1,0 +1,81 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+
+
+/* Header Styles */
+header {
+    padding: 20px 10%;
+    border-bottom: 5px solid black;
+    width: 80%; /* Adjust as needed */
+    margin: 0 auto; /* Center the header */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: white;
+}
+
+/* Experience Section */
+.experience {
+    padding: 40px 20px;
+}
+
+/* Experience Item Styles */
+.experience-item {
+    position: relative;
+    display: block; /* Make sure it acts as a block-level element */
+    margin: 20px 0;
+    padding: 20px;
+    border: 2px solid #b74b4b;
+    border-radius: 8px;
+    background-color: #222;
+    overflow: hidden; /* Ensure clean edges during animation */
+    transition: background-color 0.3s ease; /* No zoom effect */
+}
+
+.experience-item h2 {
+    color: #b74b4b;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+.experience-item p {
+    font-size: 1.1em;
+    color: #fff;
+    margin: 5px 0;
+}
+
+/* Hidden Content Styles */
+.more-info {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    padding: 0 20px;
+    margin-top: 10px;
+}
+
+.experience-item:hover .more-info {
+    max-height: 100px; /* Adjust based on the content size */
+    opacity: 1;
+}
+
+/* Hover Effects */
+.experience-item:hover {
+    background-color: #b74b4b;
+}
+
+.experience-item:hover h2,
+.experience-item:hover p {
+    color: #000;
+}

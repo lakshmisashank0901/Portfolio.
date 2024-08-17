@@ -1,0 +1,77 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+
+/* Header Styles */
+header {
+    padding: 20px 10%;
+    border-bottom: 5px solid black;
+    width: 80%; /* This will reduce the width of the header */
+    margin: 0 auto; /* Center the header */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: white;
+}
+
+/* Services Section */
+.services {
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-item {
+    width: 250px;
+    padding: 20px;
+    border: 2px solid #b74b4b;
+    border-radius: 8px;
+    background-color: #222;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-item i {
+    font-size: 3em;
+    margin-bottom: 15px;
+    color: #b74b4b;
+    transition: color 0.3s ease;
+}
+
+.service-item h2 {
+    color: #b74b4b;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.service-item p {
+    font-size: 1.1em;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effects */
+.service-item:hover {
+    transform: scale(1.05);
+    background-color: #b74b4b;
+}
+
+.service-item:hover i,
+.service-item:hover h2,
+.service-item:hover p {
+    color: #000;
+}
